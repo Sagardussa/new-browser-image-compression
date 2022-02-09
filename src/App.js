@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Button, Container, Grid, GridColumn, Image, Item} from "semantic-ui-react";
+import photo from "./images/1.jpg";
+import { Button, Container, Grid, GridColumn, Image, Item, PlaceholderImage} from "semantic-ui-react";
 import  "./App.css";
 import imageCompression from 'browser-image-compression';
 
@@ -46,7 +47,7 @@ const handlecompressimage = (e) => {
   <GridColumn width={6}>
       <Item>
 {origImageFile ? (<Image className="photo" src={origImageFile}></Image>):(<Image className="photo" 
-           src="http://navparivartan.in/wp-content/uploads/2018/11/placeholder.png"></Image>
+           src={photo}></Image>
      )}
       </Item>
   </GridColumn>
@@ -77,7 +78,7 @@ const handlecompressimage = (e) => {
 {compressedImage ? (
    <Image  className="photo" src={compressedImage}></Image>
    ):(
-    <Image className="photo" src="http://navparivartan.in/wp-content/uploads/2018/11/placeholder.png"></Image>
+    <Image className="photo" src={photo}></Image>
     )}     
  </Item>
   </GridColumn>
