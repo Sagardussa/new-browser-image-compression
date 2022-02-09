@@ -46,7 +46,7 @@ const handlecompressimage = (e) => {
   <GridColumn width={6}>
       <Item>
 {origImageFile ? (<Image className="photo" src={origImageFile}></Image>):(<Image className="photo" 
-     src="http://navparivartan.in/wp-content/uploads/2018/11/placeholder.png"></Image>
+           src="http://navparivartan.in/wp-content/uploads/2018/11/placeholder.png"></Image>
      )}
       </Item>
   </GridColumn>
